@@ -1,0 +1,94 @@
+aside {
+  background-image: url("../images/jv11386976.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.legend-login {
+  color: gray;
+  margin: auto;
+  text-align: center;
+}
+
+.div-login-outer {
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.div-login-inner {
+  padding: 20px 0 0 0;
+}
+
+.div-login-sub {
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.logo {
+  display: block;
+  margin: 10px auto 30px auto;
+  width: 300px;
+  height: 125px;
+}
+
+.fieldset-login {
+  padding: 40px 80px 20px 80px;
+  margin: 0;
+}
+
+/* width of Pixel 2 XL */
+
+@media (orientation: landscape) and (max-width: 824px) {
+  .div-aside {
+    display: none !important;
+  }
+  .div-login-outer {
+    width: 100%;
+  }
+  .logo {
+    width: 170px !important;
+    height: 70px !important;
+    margin: 10px auto 20px auto;
+  }
+  .fieldset-login {
+    padding: 20px 20px 10px 20px !important;
+  }
+  #emailHelp {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .div-aside {
+    display: none;
+  }
+  .fieldset-login {
+    padding: 40px 20px 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .logo {
+    width: 200px;
+    height: 83px;
+  }
+  .fieldset-login {
+    padding: 40px 40px 20px 40px;
+  }
+}
+
+@media only screen and (max-width: 1439px) {
+  .div-login-sub {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .div-login-sub {
+    margin: 0 100px;
+  }
+}

@@ -1,0 +1,30 @@
+@media only screen and (min-width: 768px) {
+    .panel-parameters {
+        padding: 0 0 0 5px;
+    }
+    .panel-table {
+        padding: 0 5px 0 0;
+    }
+}
+
+#parameterList, #gridPerformanceTable {
+    max-height: 280px;
+}
+
+.hidden {
+    height: 0px;
+    -webkit-transition: height, 0.5s linear;
+    -moz-transition: height, 0.5s linear;
+    -ms-transition: height, 0.5s linear;
+    -o-transition: height, 0.5s linear;
+    transition: height, 0.5s linear;
+}
+
+.hidden.open {
+    height: auto;
+    -webkit-transition: height, 0.5s linear;
+    -moz-transition: height, 0.5s linear;
+    -ms-transition: height, 0.5s linear;
+    -o-transition: height, 0.5s linear;
+    transition: height, 0.5s linear;
+}

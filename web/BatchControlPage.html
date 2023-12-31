@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>B-50KC EMS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <script src="./jquery-3.4.1.min.js"></script>
+  <script src="./bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./dx.common.css" />
+  <link rel="stylesheet" href="./dx.light.css" />
+  <script src="./jszip.min.js"></script>
+  <script src="./dx.all.js"></script>
+  <script src="./data.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./scripts/BatchControlPage.js"></script>
+  <link rel="stylesheet" href="./css/BatchControlPage.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./MainPage.html">GST</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="li-str"><a href="./SurveillancePage.html">Surveillance</a></li>
+          <li class="dropdown li-icon">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="glyphicon glyphicon-dashboard"></span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./SurveillancePage.html">Surveillance</a></li>
+            </ul>
+          </li>
+          <li class="li-str"><a href="./PerformanceAnalysisPage.html">Performance Analysis</a></li>
+          <li class="dropdown li-icon">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="glyphicon glyphicon-signal"></span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./PerformanceAnalysisPage.html">Performance Analysis</a></li>
+            </ul>
+          </li>
+          <li class="li-str"><a href="./BatchControlPage.html">Batch Control</a></li>
+          <li class="dropdown li-icon">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="glyphicon glyphicon-th-list"></span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./BatchControlPage.html">Batch Control</a></li>
+            </ul>
+          </li>
+          <li class="li-str"><a href="#">F/W Download</a></li>
+          <li class="dropdown li-icon">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="glyphicon glyphicon-download-alt"></span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">F/W Download</a></li>
+            </ul>
+          </li>
+          <li class="dropdown li-str"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Management <span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">User Management</a></li>
+              <li><a href="#">Repeater Management</a></li>
+              <li><a href="#">Alarm Management</a></li>
+            </ul>
+          </li>
+          <li class="dropdown li-icon">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="glyphicon glyphicon-list-alt"></span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="li-header"><a disabled>Management</a></li>
+              <li><a href="#">User Management</a></li>
+              <li><a href="#">Repeater Management</a></li>
+              <li><a href="#">Alarm Management</a></li>
+            </ul>
+          </li>
+          <li class="li-str"><a href="#">Antenna Tuner</a></li>
+          <li class="dropdown li-icon">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="glyphicon glyphicon-fullscreen"></span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Antenna Tuner</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a id="btn_logOut" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          General Controls<kbd class="btn-right-aligned">Execution</kbd><kbd class="btn-right-aligned"
+            style="margin-right: 20px;">Region</kbd>
+        </div>
+        <div class="panel-body">
+          <div id="general-controls"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Reset<kbd class="btn-right-aligned">Execution</kbd><kbd style="margin-right: 20px;"
+            class="btn-right-aligned">Region</kbd>
+        </div>
+        <div class="panel-body">
+          <div id="reset"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
